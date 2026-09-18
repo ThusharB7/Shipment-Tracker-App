@@ -6,10 +6,8 @@ The application allows users to create shipments, view and search shipments, fil
 
 ## Live Demo
 
-- Frontend: https://YOUR-VERCEL-URL.vercel.app
-- Backend API: https://shipment-tracker-app.onrender.com
-
-> Replace `YOUR-VERCEL-URL` with the actual Vercel URL before submission.
+- Frontend: (https://shipment-tracker-app-57cl.vercel.app/)
+- Backend API: (https://shipment-tracker-app.onrender.com/)
 
 ---
 
