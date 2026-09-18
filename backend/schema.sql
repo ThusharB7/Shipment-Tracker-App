@@ -1,0 +1,17 @@
+CREATE TABLE IF NOT EXISTS shipments (
+    id SERIAL PRIMARY KEY,
+    reference_number VARCHAR(100) UNIQUE NOT NULL,
+    origin VARCHAR(255) NOT NULL,
+    destination VARCHAR(255) NOT NULL,
+    current_status VARCHAR(50) NOT NULL DEFAULT 'Booked',
+    expected_delivery_date DATE NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS shipment_history (
+    id SERIAL PRIMARY KEY,
+    shipment_id INTEGER NOT NULL REFERENCES shipments(id) ON DELETE CASCADE,
+    status VARCHAR(50) NOT NULL,
+    changed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

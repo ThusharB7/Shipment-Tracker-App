@@ -11,13 +11,13 @@ const {
 const router = express.Router();
 
 router.post("/", createShipment);
-
 router.get("/", getShipments);
+
+// History route must come before /:id
+router.get("/:id/history", getShipmentHistory);
 
 router.get("/:id", getShipmentById);
 
 router.patch("/:id/status", updateShipmentStatus);
-
-router.get("/:id/history", getShipmentHistory);
 
 module.exports = router;
