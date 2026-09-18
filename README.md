@@ -1,6 +1,4 @@
-Yep mate. **This time: one single code block containing the ENTIRE README.** Copy everything **inside** the outer block and paste it into GitHub's `README.md` editor. Do **not** copy the first/last ` ``` `.
 
-````markdown
 # Nagarkot Shipment Status Tracker
 
 A full-stack shipment tracking application built as a technical assessment for Nagarkot Forwarders Pvt. Ltd.
